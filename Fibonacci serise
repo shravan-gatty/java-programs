@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class fibonaci {
+    static void Fibonacci(int N)
+    {
+        int a = 0, b = 1;
+
+        int counter = 0;
+
+        while (counter < N) {
+
+            System.out.print(a + " ");
+            int c = b + a;
+            a = b;
+            b = c;
+            counter = counter + 1;
+        }
+    }
+
+    public static void main(String args[])
+    {
+        System.out.println("enter N series ie how many series you want to print fibonci:");
+        Scanner sc=new Scanner(System.in);
+        int N= sc.nextInt();
+        Fibonacci(N);
+    }
+}
