@@ -1,0 +1,16 @@
+package shravan;
+
+import java.util.Scanner;
+
+public class loop{
+    public static void main(String[] args){
+        int age;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your age");
+        age= sc.nextInt();
+        if(age>=18)
+            System.out.println("you are ready for vote");
+        else
+            System.out.println("you are not eligible for vote");
+    }
+}
