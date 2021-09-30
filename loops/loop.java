@@ -1,8 +1,15 @@
 package loops;
+
+import java.util.Scanner;
 public class loop{
     public static void main(String args[]) {
-        for(int i=0;i<=10;i++)
-        System.out.println("hello worlds");
+        Scanner myObj = new Scanner(System.in); // Create a Scanner object
+        System.out.println("Enter username");
+
+        String userName = myObj.nextLine(); // Read user input
+        System.out.println("Username is: " + userName);
+        myObj.close();
+
         
     }
 
